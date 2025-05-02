@@ -3,7 +3,7 @@ import { Check, ChevronRight } from 'lucide-react';
 
 const businessModels = [
   {
-    name: "Modelo Express",
+    name: "DamaFace Light",
     investment: "R$ 90.000",
     roi: "6-12 meses",
     features: [
@@ -15,7 +15,7 @@ const businessModels = [
     recommended: false
   },
   {
-    name: "Modelo Premium",
+    name: "DamaFace Slim",
     investment: "R$ 150.000",
     roi: "8-14 meses",
     features: [
@@ -27,7 +27,7 @@ const businessModels = [
     recommended: true
   },
   {
-    name: "Modelo Master",
+    name: "DamaFace Premium",
     investment: "R$ 250.000",
     roi: "12-18 meses",
     features: [
@@ -47,12 +47,8 @@ const BusinessModelsSection: React.FC = () => {
     <section id="modelos" className="py-16 bg-[#ededed]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Modelos de Negócio</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Escolha o modelo que melhor se adapta ao seu perfil de investimento e objetivos de crescimento.
-          </p>
         </div>
-        
+          
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {businessModels.map((model, index) => (
             <div 

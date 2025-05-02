@@ -47,7 +47,7 @@ const CTASection: React.FC = () => {
             </div>
             
             <div className="bg-[#111] p-4 rounded-lg flex items-center">
-              <span className="text-[#fa1571] font-bold text-3xl mr-2">100+</span>
+              <span className="text-[#fa1571] font-bold text-3xl mr-2">+50</span>
               <span className="text-sm">unidades<br/>em operação</span>
             </div>
             

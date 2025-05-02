@@ -72,8 +72,8 @@ const TestimonialsSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Histórias de Sucesso</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Veja como nossos franqueados transformaram suas vidas com a DamaFace.
+           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+             Resultados concretos de quem escolheu a DamaFace para crescer com segurança no setor de estética
           </p>
         </div>
         

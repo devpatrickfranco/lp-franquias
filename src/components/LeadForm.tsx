@@ -47,7 +47,7 @@ const LeadForm: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Comece Sua Jornada DamaFace</h2>
           <p className="text-lg text-gray-600">
-            Preencha o formulário abaixo e nossa equipe entrará em contato para apresentar todas as oportunidades disponíveis.
+          Preencha o formulário e descubra como levar uma franquia de estética de alto desempenho para a sua cidade
           </p>
         </div>
 

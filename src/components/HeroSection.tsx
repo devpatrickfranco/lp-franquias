@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <section 
-      id="hero" 
+      id="sobre-a-franquia" 
       className="pt-20 relative min-h-screen flex items-center"
       style={{
         backgroundImage: 'url(https://www.damaface.com.br/img-evento.jpeg)',
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
       
       <div className="container mx-auto px-4 py-16 md:py-32 flex flex-col items-center text-center relative z-10">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 max-w-4xl text-white">
-          Descubra as Franquias de Estética DamaFace: Invista em Seu Futuro com Lucro Acessível e Suporte Completo
+          Conheça a Franquia de Estética DamaFace – Lucro Acessível, Suporte Total e um Futuro Promissor
         </h1>
         
         <p className="text-lg md:text-xl mb-8 max-w-2xl text-gray-200">

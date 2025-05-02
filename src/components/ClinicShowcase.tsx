@@ -33,9 +33,9 @@ const ClinicShowcase: React.FC = () => {
     <section className="py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Modelos de Franquias</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Escolha sua Franquia DamaFace</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Escolha o modelo ideal para sua cidade e comece sua jornada de sucesso
+            Modelos pensados para diferentes cidades e perfis – descubra qual combina e dê o próximo passo rumo a um negócio sólido e lucrativo
           </p>
         </div>
         
@@ -53,7 +53,7 @@ const ClinicShowcase: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
                   <div className="absolute bottom-4 left-4">
-                    <h3 className="text-white text-2xl font-bold">Royal {clinic.name}</h3>
+                    <h3 className="text-white text-2xl font-bold">DamaFace {clinic.name}</h3>
                   </div>
                 </div>
               </div>

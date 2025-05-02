@@ -3,23 +3,23 @@ import { Percent, TrendingUp, Lightbulb, Brain } from 'lucide-react';
 
 const benefits = [
   {
-    title: "40% de lucro",
-    description: "Rentabilidade superior à média do mercado com modelo de negócio otimizado para maximizar seus ganhos.",
+    title: "Lucro de até 40%",
+    description: "um desempenho acima da média do mercado, graças a um modelo validado e focado em alta performance",
     icon: <Percent size={40} className="text-[#fa1571]" />,
   },
   {
-    title: "Baixo custo de operação",
-    description: "Estrutura enxuta e processos eficientes que garantem despesas controladas e maior lucratividade.",
+    title: "Custo operacional reduzido",
+    description: "com uma estrutura inteligente e processos otimizados, você aumenta o lucro e reduz os riscos",
     icon: <TrendingUp size={40} className="text-[#fa1571]" />,
   },
   {
-    title: "Treinamento e suporte completo",
-    description: "Capacitação contínua e acompanhamento especializado para garantir o sucesso do seu negócio desde o primeiro dia.",
+    title: "Treinamento e suporte total",
+    description: "Desde a escolha do ponto até o dia a dia da operação, você conta com suporte dedicado e acompanhamento especializado para construir um negócio sólido e lucrativo",
     icon: <Lightbulb size={40} className="text-[#fa1571]" />,
   },
   {
     title: "Uso de inteligência artificial",
-    description: "Tecnologia avançada para diagnósticos precisos e resultados superiores, diferenciando seu negócio da concorrência.",
+    description: "Tecnologia que transforma o atendimento – com o apoio da inteligência artificial, você atrai, engaja e converte mais clientes com eficiência",
     icon: <Brain size={40} className="text-[#fa1571]" />,
   },
 ];
@@ -85,9 +85,9 @@ const WhyInvestSection: React.FC = () => {
     <section id="benefícios" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que investir na DamaFace?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que a DamaFace é o investimento certo para você?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Nosso modelo de franquia foi desenvolvido para maximizar seus ganhos com suporte completo em todas as etapas.
+            Um modelo de franquia validado, criado para gerar lucro real com apoio completo do início ao crescimento do seu negócio.
           </p>
         </div>
         
@@ -111,13 +111,13 @@ const WhyInvestSection: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="text-4xl font-bold text-[#fa1571] mb-2">
-                +<NumberCounter end={100} /> 
+                +<NumberCounter end={50} /> 
               </div>
               <p className="text-gray-600">Unidades em Operação</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="text-4xl font-bold text-[#fa1571] mb-2">
-                +<NumberCounter end={10000} />
+                +<NumberCounter end={800} /> Mil
               </div>
               <p className="text-gray-600">Clientes Atendidos</p>
             </div>
@@ -129,7 +129,7 @@ const WhyInvestSection: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="text-4xl font-bold text-[#fa1571] mb-2">
-                <NumberCounter end={12} />
+                <NumberCounter end={6} />
               </div>
               <p className="text-gray-600">Anos no Mercado</p>
             </div>

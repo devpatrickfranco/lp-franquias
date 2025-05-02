@@ -5,22 +5,25 @@ const steps = [
   {
     icon: <ClipboardCheck size={32} className="text-white" />,
     title: "Inscrição",
-    description: "Preencha o formulário e agende uma conversa com nossos consultores para entender melhor o modelo de negócio."
+    description: "Preencha o formulário e agende uma conversa com nossos especialistas para entender melhor o modelo de negócio."
   },
-  {
-    icon: <GraduationCap size={32} className="text-white" />,
-    title: "Treinamento",
-    description: "Participe do nosso programa completo de capacitação, incluindo aspectos técnicos, administrativos e de gestão."
-  },
+
   {
     icon: <Store size={32} className="text-white" />,
     title: "Implantação",
-    description: "Receba suporte para escolha do ponto, montagem da clínica e contratação da equipe inicial."
+    description: "Conte com o nosso suporte desde a escolha do ponto até a montagem da clínica e estruturação da equipe"
   },
+
+  {
+    icon: <GraduationCap size={32} className="text-white" />,
+    title: "Treinamento",
+    description: "Nosso treinamento abrange todas as áreas essenciais: técnica, administrativa, estratégica e comercial, preparando você para liderar com confiança desde o primeiro dia"
+  },
+
   {
     icon: <Zap size={32} className="text-white" />,
     title: "Início das operações",
-    description: "Comece suas atividades com acompanhamento especializado nos primeiros meses para garantir o sucesso."
+    description: "Comece suas atividades com acompanhamento próximo, garantindo estabilidade e desempenho desde o início"
   }
 ];
 
@@ -31,7 +34,7 @@ const ProcessSection: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Como Iniciar</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Siga estas etapas simples para se tornar um franqueado DamaFace e começar sua jornada de sucesso.
+           Siga as etapas fundamentais para se tornar um franqueado DamaFace e iniciar sua trajetória com suporte, estratégia e segurança.
           </p>
         </div>
         
@@ -62,8 +65,15 @@ const ProcessSection: React.FC = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <p className="text-lg mb-6">Está pronto para dar o próximo passo e transformar sua carreira?</p>
-          <button className="bg-[#fa1571] hover:bg-[#e01364] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+          <p className="text-lg mb-6">Pronto para dar o próximo passo?</p>
+          <button
+            onClick={() => {
+              const formElement = document.querySelector('#lead-form');
+              if (formElement) {
+                formElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="bg-[#fa1571] hover:bg-[#e01364] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">               
             Solicitar Estimativa Agora
           </button>
         </div>
