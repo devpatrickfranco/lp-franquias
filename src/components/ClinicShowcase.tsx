@@ -53,7 +53,7 @@ const ClinicShowcase: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
                   <div className="absolute bottom-4 left-4">
-                    <h3 className="text-white text-2xl font-bold">DamaFace {clinic.name}</h3>
+                    <h3 className="text-white text-2xl font-bold">Dama {clinic.name}</h3>
                   </div>
                 </div>
               </div>
@@ -85,10 +85,6 @@ const ClinicShowcase: React.FC = () => {
                     </p>
                   </div>
                 </div>
-
-                <button className="w-full mt-6 bg-[#fa1571] hover:bg-[#e01364] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 flex items-center justify-center">
-                  Saiba mais
-                </button>
               </div>
             </div>
           ))}

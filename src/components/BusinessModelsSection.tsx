@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Check, ChevronRight } from 'lucide-react';
+import { s } from 'framer-motion/client';
+
 
 const businessModels = [
   {
-    name: "DamaFace Light",
+    name: "Dama Light",
     investment: "R$ 90.000",
     roi: "6-12 meses",
     features: [
@@ -15,7 +17,7 @@ const businessModels = [
     recommended: false
   },
   {
-    name: "DamaFace Slim",
+    name: "Dama Slim",
     investment: "R$ 150.000",
     roi: "8-14 meses",
     features: [
@@ -27,7 +29,7 @@ const businessModels = [
     recommended: true
   },
   {
-    name: "DamaFace Premium",
+    name: "Dama Premium",
     investment: "R$ 250.000",
     roi: "12-18 meses",
     features: [
@@ -39,6 +41,8 @@ const businessModels = [
     recommended: false
   }
 ];
+
+
 
 const BusinessModelsSection: React.FC = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -90,10 +94,17 @@ const BusinessModelsSection: React.FC = () => {
                   </ul>
                 </div>
                 
-                <button className={`w-full py-3 rounded-full flex items-center justify-center transition-colors duration-300 ${
+                <button 
+                  onClick={() => {
+                  const formSection = document.getElementById('lead-form');
+                  if (formSection) {
+                    formSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                  }}
+                  className={`w-full py-3 rounded-full flex items-center justify-center transition-colors duration-300 ${
                   model.recommended 
-                    ? 'bg-[#fa1571] hover:bg-[#e01364] text-white' 
-                    : 'bg-[#d8a8a1] hover:bg-[#c29992] text-white'
+                  ? 'bg-[#fa1571] hover:bg-[#e01364] text-white' 
+                  : 'bg-[#d8a8a1] hover:bg-[#c29992] text-white'
                 }`}>
                   Saiba mais
                   <ChevronRight size={18} className="ml-1" />
